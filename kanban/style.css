@@ -28,3 +28,21 @@
 .task-d {
   border-radius: 15px;
 }
+
+.task-d {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.task-d.dragging {
+  opacity: 0.5;
+}
+
+.column {
+  min-height: 200px;
+  border: 2px dashed #ccc;
+  padding: 10px;
+}
