@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="todo" class="column">
+        <h1>Todo</h1>
+        <input type="text" placeholder="add task" />
+        <button onclick="addTask('todo')">Add task</button>
+      </div>
+      <div id="inprogress" class="column">
+        <h1>Inprogress</h1>
+        <input type="text" placeholder="add task" />
+        <button onclick="addTask('inprogress')">Add task</button>
+      </div>
+      <div id="completed" class="column">
+        <h1>Completed</h1>
+        <input type="text" placeholder="add task" />
+        <button onclick="addTask('completed')">Add task</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
