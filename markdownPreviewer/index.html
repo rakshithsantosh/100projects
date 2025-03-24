@@ -4,17 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Markdown Previewer</title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Load Marked.js & Highlight.js -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+    />
   </head>
   <body>
+    <div class="toolbar">
+      <button id="toggle-theme">🌙 Dark Mode</button>
+      <button id="copy-btn">📋 Copy</button>
+      <button id="download-btn">⬇ Download</button>
+      <button id="clear-btn">❌ Clear</button>
+    </div>
+
+    <h2>Markdown Previewer</h2>
+    <p id="word-count">Words: 0 | Characters: 0</p>
+
     <div class="container">
-      <textarea id="markdown-input" placeholder="Enter Markdown..."></textarea>
+      <textarea
+        id="markdown-input"
+        placeholder="Type Markdown here..."
+      ></textarea>
+
       <div id="preview"></div>
     </div>
-    <button id="clear-btn">Clear</button>
 
     <script src="./script.js"></script>
   </body>
