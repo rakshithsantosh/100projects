@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  margin-top: 5%;
+  width: 80%;
+  height: 500px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+textarea {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#preview {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+  background: white;
+  overflow: auto;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase for a bold look */
+  letter-spacing: 1.5px; /* Adds spacing between letters */
+  border-radius: 8px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight text shadow */
+  font-family: "Poppins", sans-serif; /* Modern, clean font */
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
